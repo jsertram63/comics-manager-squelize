@@ -1,0 +1,30 @@
+<%- include('../../includes/head.ejs') %>
+<%- include('../../includes/navigation.ejs') %>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<body>
+        <table class="table">
+                <thead class="black white-text">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Hero</th>
+                    <th scope="col">Titre</th>
+                    <th scope="col">Mois</th>
+                    <th scope="col">Annee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <% for (let coms of comics) {%>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><%= coms.Category.name %></td>
+                    <td><%= coms.name %></td>
+                    <td><%= coms.Month.name %></td>
+                    <td>2019 </td>
+                  </tr>
+                 <% } %> 
+              
+                </tbody>
+              </table>
+
+</body>
+<%- include('../../includes/end.ejs') %>
