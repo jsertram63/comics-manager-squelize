@@ -1,7 +1,7 @@
 
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('comics-manager','root','rainette63*', {
+const sequelize = new Sequelize('comics-manager','root','password', {
   dialect: 'mysql',
   host: 'localhost'
 });
